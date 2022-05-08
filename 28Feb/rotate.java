@@ -15,6 +15,10 @@ public class Main{
 //actual rotations
     k=k%count;
     
+//for negative rotation
+    if(k<0){
+        k=k+count;
+    }
     int tmp1=(int)Math.pow(10,k);
     int p1=num%tmp1;
     int p2=num/tmp1;
